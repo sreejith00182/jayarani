@@ -40,7 +40,11 @@
   
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
-
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
 </head>
 
 <body id="body">
@@ -52,7 +56,8 @@
 			<div class="col-lg-12">
 				<nav class="navbar navbar-expand-lg p-0">
 					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.png" alt="Logo">
+						<!--<img src="images/logo.png" alt="Logo">-->
+            വാരഫലം
 					</a>
 
 					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,10 +66,22 @@
 
 					<div class="collapse navbar-collapse ml-auto" id="navbarsExample09">
 						<ul class="navbar-nav ml-auto">
-							<li class="nav-item active">
+							<li class="nav-item">
 								<a class="nav-link" href="index.html">Home</a>
 							</li>
-							<li class="nav-item dropdown @@portfolio">
+              <li class="nav-item">
+								<a class="nav-link" href="#about">About Us</a>
+							</li>
+              <li class="nav-item">
+								<a class="nav-link" href="#varabhalam">വാരഫലം</a>
+							</li>
+              <li class="nav-item">
+								<a class="nav-link" href="#testimonial">Testimonials</a>
+							</li>
+              <li class="nav-item">
+								<a class="nav-link" href="#contact">Contact Us</a>
+							</li>
+							<!--<li class="nav-item dropdown @@portfolio">
 								<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio <span class="ion-ios-arrow-down"></span></a>
 								<ul class="dropdown-menu" aria-labelledby="dropdown03">
 									<li><a class="dropdown-item @@portfolioFilter" href="portfolio.html">Portfolio Filter</a></li>
@@ -114,7 +131,7 @@
 									<li><a class="dropdown-item @@pricing" href="pricing.html">Pricing Table</a></li>
 								</ul>
 							</li>
-							<li class="nav-item @@contact"><a class="nav-link" href="contact.html">Contact</a></li>
+							<li class="nav-item @@contact"><a class="nav-link" href="contact.html">Contact</a></li>-->
 						</ul>
 					</div>
 				</nav>
@@ -139,7 +156,7 @@
 </section>
 
 <!-- Wrapper Start -->
-<section class="about section">
+<section class="about section" id="about">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-7">
@@ -175,7 +192,7 @@
 </section>
 
 <!-- Service Start -->
-<section class="service">
+<section class="service" id="varabhalam">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -268,7 +285,7 @@
 </section>
 
 <!-- Content Start -->
-<section class="testimonial">
+<section class="testimonial" id="testimonial">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -355,6 +372,96 @@
   </div>
 </section>
 
+
+<section class="page-title bg-2" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Drop Us A Note</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quibusdam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- contact form start -->
+<section class="contact-form">
+  <div class="container">
+    <form class="row" id="contact-form">
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <div class="form-group">
+            <input name="user_name" type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <input name="user_email" type="text" class="form-control" placeholder="Email Address">
+          </div>
+          <div class="form-group">
+            <input name="user_subject" type="text" class="form-control" placeholder="Subject">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <div class="form-group-2">
+            <textarea name="user_message" class="form-control" rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <button class="btn btn-default" type="submit">Send Message</button>
+        </div>
+      </div>
+      <div class="error" id="error">Sorry Msg dose not sent</div>
+      <div class="success" id="success">Message Sent</div>
+    </form>
+    <div class="contact-box row">
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <h2>Stop By For A visit</h2>
+          <ul class="address-block">
+            <li>
+              <i class="ion-ios-location-outline"></i>Pattom, Trivandrum
+            </li>
+            <li>
+              <i class="ion-ios-email-outline"></i>Email: contact@mail.com
+            </li>
+            <li>
+              <i class="ion-ios-telephone-outline"></i>Phone:+9746812212
+            </li>
+          </ul>
+          <ul class="social-icons">
+            <li>
+              <a href="#"><i class="ion-social-googleplus-outline"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ion-social-linkedin-outline"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ion-social-pinterest-outline"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ion-social-dribbble-outline"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ion-social-twitter-outline"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ion-social-facebook-outline"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 mt-5 mt-md-0">
+        <div class="block">
+          <div class="google-map">
+            <div class="map" id="map_canvas" data-latitude="51.5223477" data-longitude="-0.1622023"
+              data-marker="images/marker.png"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- footer Start -->
 <footer class="footer">
 	<div class="container">
@@ -362,11 +469,11 @@
 			<div class="col-md-12">
 				<div class="footer-manu">
 					<ul>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="contact.html">Contact us</a></li>
-						<li><a href="service.html">How it works</a></li>
-						<li><a href="faq.html">FAQ</a></li>
-						<li><a href="pricing.html">Pricing</a></li>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#contact">Contact us</a></li>
+						<li><a href="#testimonial">How it works</a></li>
+						<li><a href="#varabhalam">Varabhalam</a></li>
+						<li><a href="index.html">Home</a></li>
 					</ul>
 				</div>
 				<p class="copyright mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; Designed & Developed by  <a href="https://rezyumer.com/">Rezyumer
